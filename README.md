@@ -1,6 +1,5 @@
-# Cybersecurity Portfolio ☁️⚡
-**Cloud Security Engineer studentprojekt 2026**
-
-## 🛡️ SQLi Scanner (under utveckling)
-```bash
-python3 sqli_scanner.py http://testphp.vulnweb.com/listproducts.php?cat=1
+Oscar Morberg | DevOps Engineer
+Portfolio: http://16.170.248.238
+AWS S3 Static Hosting | SQLi Scanner | GitHub Automation
+oscarmorberg-ops/security-portfolio
+Stockholm | Cloud Security
