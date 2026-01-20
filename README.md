@@ -7,4 +7,4 @@
 - SQL Injection Scanner (LIVE)
 - 5 Python security tools
 
-**[LinkedIn](https://www.linkedin.com/in/oscar-morberg-a705983a7)**
+
