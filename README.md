@@ -1,4 +1,4 @@
-# Oscar Morberg - Cloud Security Portfolio 🚀
+# Oscar Morberg - Cloud Security Portfolio 
 
 **LIVE AWS S3:** http://16.170.248.238
 
