@@ -5,9 +5,9 @@ Realtids pipeline som fångar MacSync infostealer IOCs från AlienVault OTX.
 [![Python](https://img.shields.io/badge/Python-3.8+-blue)](https://python.org)
 [![OTX](https://img.shields.io/badge/OTX-Live-red)](https://otx.alienvault.com)
 
-## Vad gör den?
+## What it does
 
-Fångad LIVE: MacSync infostealer (28 IOCs realtime) [Jan 22 2026]
+LIVE: MacSync infostealer (28 IOCs realtime) [Jan 22 2026]
 
 ## Features
 
