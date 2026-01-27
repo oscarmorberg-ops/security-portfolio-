@@ -1,0 +1,38 @@
+# LIVE OTX Threat Intelligence Aggregator
+
+Realtids pipeline som fångar MacSync infostealer IOCs från AlienVault OTX.
+
+[![Python](https://img.shields.io/badge/Python-3.8+-blue)](https://python.org)
+[![OTX](https://img.shields.io/badge/OTX-Live-red)](https://otx.alienvault.com)
+
+## What it does
+
+LIVE: MacSync infostealer (28 IOCs realtime) [Jan 22 2026]
+
+## Features
+
+- LIVE OTX API - Pulser från AlienVault OTX
+- 28 MacSync IOCs - Domains, IPs, file hashes  
+- SIEM-ready JSON - Elasticsearch/Splunk-kompatibel
+- Production error handling - Retry logic + logging
+- YARA export - Malware detection rules
+
+## Demo Output
+
+```json
+{
+  "threat_actor": "MacSync Infostealer",
+  "indicators": 28,
+  "pulse_id": "6850d5b...",
+  "timestamp": "2026-01-22T16:23:00Z",
+  "severity": "HIGH"
+}
+
+pip install requests
+export OTX_KEY="din_api_key"
+python threat_aggregator.py
+
+Python 3.8+ + requests
+JSON export (SIEM)
+OTX API v2
+Production-grade error handling
