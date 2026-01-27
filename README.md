@@ -1,13 +1,12 @@
 # Oscar Morberg - Cloud Security Portfolio 
 
-**LIVE AWS S3:** http://16.170.248.238
+**Self-taught Cloud Security | 31 commits/15 days**
 
-## Projekten:
-- AWS S3 static website deployment ✓
-- SQL Injection Scanner (LIVE)
-- 5 Python security tools
+## 7 PRODUCTION SECURITY TOOLS
 
-## My Thinking Process
+** My LIVE AWS S3:** http://16.170.248.238
+
+My Thinking Process
 1. **Check** - Initial threat picture from logs
 2. **Review** - Pattern analysis
 3. **Why** - Root cause analysis
