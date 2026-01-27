@@ -1,0 +1,34 @@
+pytest==7.4.0
+
+import pytest
+import socket
+from unittest.mock import patch, Mock
+
+# Mocka socket för tester (ingen riktig scanning)
+@pytest.fixture
+def mock_socket():
+    sock = Mock()
+    sock.connect_ex.return_value = 0  # Öppen port
+    return sock
+
+def test_scan_port_open(mock_socket):
+    """Test öppen port (80 google.com)"""
+    with patch('socket.socket', return_value=mock_socket):
+        from port_scanner import scan_port
+        assert scan_port("google.com", 80) == True
+
+def test_scan_port_closed():
+    """Test stängd port (9999)"""
+    mock_closed = Mock()
+    mock_closed.connect_ex.return_value = 1
+    with patch('socket.socket', return_value=mock_closed):
+        from port_scanner import scan_port
+        assert scan_port("google.com", 9999) == False
+
+def test_scan_port_invalid_host():
+    """Test ogiltig host"""
+    mock_error = Mock()
+    mock_error.connect_ex.side_effect = Exception
+    with patch('socket.socket', return_value=mock_error):
+        from port_scanner import scan_port
+        assert scan_port("invalid123", 80) == False
