@@ -1,0 +1,9 @@
+## Live Demo
+![Terminal Demo](demo-terminal.png)
+
+**Try yourself 30 sec:**
+```bash
+pip install requests pandas
+python3 threat_aggregator.py  # OTX pipeline  
+python3 sqli_scanner.py       # SQLi scanner
+python3 siem_parser.py        # SIEM dashboard

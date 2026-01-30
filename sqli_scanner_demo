@@ -1,0 +1,18 @@
+# SQLi Scanner Demo
+
+[![Demo](sqli_scanner_demo.png)](sqli_scanner_demo.png)
+
+## Tools & Metod
+- **Target**: DVWA (Damn Vulnerable Web Application)
+- **Testade payloads**: 18+ varianter (OR 1=1, UNION SELECT, etc.)
+- **Detection**: Regex matchning av MySQL error responses
+- **Risk**: Data exfiltration via UNION-based SQL injection
+
+## Attack Chain Analys
+1. **Form detection**: Username/password fields identifierade via HTML parsing
+2. **Payload injection**: 18 systematiska SQLi payloads testade
+3. **Error confirmation**: MySQL syntax errors bekräftade via regex
+4. **Risk assessment**: Admin credential dump possible
+5. **Mitigation**: Prepared statements + input validation
+
+## Tech Stack

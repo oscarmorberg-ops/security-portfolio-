@@ -1,0 +1,22 @@
+cat > README.md << 'EOF'
+# Multiverse Data Analyst Portfolio
+
+[![Python](https://img.shields.io/badge/Python-3.8+-blue)](https://python.org)
+
+## Projects
+### 1. OTX Threat Aggregator
+Real-time AlienVault OTX threat intelligence pipeline
+
+### 2. SQL Injection Scanner  
+Automated web vulnerability scanner
+
+### 3. SIEM Log Parser
+OTX → SIEM dashboard JSON pipeline
+
+## Tech Stack
+- Python 3.8+
+- Requests, JSON parsing
+- Threat intelligence pipelines
+
+**Multiverse Manchester Data Analyst Level 4 ready!** 🚀
+EOF
