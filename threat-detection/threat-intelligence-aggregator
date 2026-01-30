@@ -36,4 +36,3 @@ Python 3.8+ + requests
 JSON export (SIEM)
 OTX API v2
 Production-grade error handling
-
